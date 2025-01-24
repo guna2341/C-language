@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int Loop(int a,int limit) {
+    if (a > limit) {
+        return 1;
+    }
+    else {
+        printf("%d ",a);
+        Loop(a+1,limit);
+    }
+}
+
+int main() {
+    int a = 1;
+    int limit;
+    printf("Enter a number:");
+    scanf("%d",&limit);
+    Loop(a,limit);
+    return 0;
+}
